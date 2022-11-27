@@ -7,7 +7,7 @@ app.use(cors());
 const PORT = 3005;
 
 
-app.listen(PORT, (error) =>{
+app.listen(process.env.PORT || 5000, (error) =>{
 	if(!error)
 		console.log("Server is Successfully Running,	and App is listening on port "+ PORT)
                 	else
