@@ -7,7 +7,7 @@ app.use(cors());
 const PORT = 3005;
 
 
-app.listen(process.env.PORT || 5000, (error) =>{
+app.listen(process.env.PORT || 3005, (error) =>{
 	if(!error)
 		console.log("Server is Successfully Running,	and App is listening on port "+ PORT)
                 	else
@@ -20,6 +20,8 @@ app.get('/', (req, res)=>{
     res.send("Test");    
 
 });
+
+
 
 app.get('/api/v1/query', (req, res)=>{
     res.status(200);

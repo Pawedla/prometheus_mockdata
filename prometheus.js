@@ -10,7 +10,7 @@ export default class Prometheus {
         let currMetrics = this.metrics.get(name)
         if(currMetrics==undefined){
             currMetrics=[]
-            currMetrics.push([1435781451.781, value])
+            currMetrics.push([1671038362.781, value])
         } else {
             currMetrics.push([currMetrics.at(-1)[0]+15, value])
 
